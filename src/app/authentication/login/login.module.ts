@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginService } from './services';
 
 
 @NgModule({
@@ -31,6 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatIconModule,
     MatSnackBarModule,
     FlexLayoutModule
+  ],
+  providers: [
+    LoginService
   ]
 })
 export class LoginModule { }
