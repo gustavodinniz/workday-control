@@ -1,4 +1,10 @@
-import { Logar.Component } from './logar.component';
+import {Logar
+
+.
+Component
+}
+from
+'./logar.component';
 
 describe('Logar.Component', () => {
   it('should create an instance', () => {

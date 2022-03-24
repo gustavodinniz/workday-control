@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router, Routes } from '@angular/router';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import {Component, OnInit} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {Router, Routes} from '@angular/router';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
-import { Login } from '../../models';
-import { LoginService } from '../../services';
+import {Login} from '../../models';
+import {LoginService} from '../../services';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +20,8 @@ export class LoginComponent implements OnInit {
     private snackBar: MatSnackBar,
     private router: Router,
     private loginService: LoginService
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
     this.generateForm();
@@ -59,7 +60,7 @@ export class LoginComponent implements OnInit {
         if (err['status'] == 401) {
           msg = "Email/senha inválido(s)."
         }
-        this.snackBar.open(msg, "Erro", { duration: 5000 });
+        this.snackBar.open(msg, "Erro", {duration: 5000});
       }
     );
   }
