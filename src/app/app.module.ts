@@ -11,6 +11,9 @@ import { CadastroPjModule } from './authentication/cadastro-pj/cadastro-pj.modul
 import { CadastroPjRoutingModule } from './authentication/cadastro-pj/cadastro-pj-routing.module';
 import { CadastroPfModule } from './authentication/cadastro-pf/cadastro-pf.module';
 import { CadastroPfRoutingModule } from './authentication/cadastro-pf/cadastro-pf-routing.module';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { CadastroPfRoutingModule } from './authentication/cadastro-pf/cadastro-p
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
+    FlexLayoutModule,
     LoginModule,
     LoginRoutingModule,
     CadastroPjModule,
