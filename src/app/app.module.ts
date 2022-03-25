@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { LoginModule, LoginRoutingModule } from './authentication';
 import { CadastroPjModule } from './authentication/cadastro-pj/cadastro-pj.module';
 import { CadastroPjRoutingModule } from './authentication/cadastro-pj/cadastro-pj-routing.module';
+import { CadastroPfModule } from './authentication/cadastro-pf/cadastro-pf.module';
+import { CadastroPfRoutingModule } from './authentication/cadastro-pf/cadastro-pf-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { CadastroPjRoutingModule } from './authentication/cadastro-pj/cadastro-p
     LoginRoutingModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
+    CadastroPfModule,
+    CadastroPfRoutingModule,
 
     AppRoutingModule
   ],
