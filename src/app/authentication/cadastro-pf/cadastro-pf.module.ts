@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CadastroPfComponent } from './components/cadastro-pf.component';
+import { CadastrarPfService } from './services/cadastrar-pf.service';
 
 
 
@@ -35,5 +36,8 @@ import { CadastroPfComponent } from './components/cadastro-pf.component';
     MatSnackBarModule,
     SharedModule
   ],
+  providers: [
+    CadastrarPfService
+  ]
 })
 export class CadastroPfModule { }
