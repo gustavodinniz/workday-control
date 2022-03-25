@@ -14,6 +14,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CadastrarPjService } from './services/cadastrar-pj.service';
 
 
 @NgModule({
@@ -34,6 +35,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     MatIconModule,
     MatSnackBarModule,
     SharedModule
+  ],
+  providers: [
+    CadastrarPjService
   ]
 })
 export class CadastroPjModule { }
